@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
+}
+
+html {
+  background-color: #191c1f;
+  position: relative;
+  z-index: -3;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --BFI-BLACK: #191c1f;
+  --BFI-WHITE: #f3f4f5;
+  position: relative;
+  background: radial-gradient(50% 50% at 50% 50%, #0b1f3a 0%, #191c1f 100%);
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+
+  z-index: -2;
+  min-width: 320px;
+  min-height: -webkit-fill-available;
+  box-sizing: border-box;
+}
+
+@media screen and (max-height: 700px) and (min-width: 768px) {
+  body {
+    min-height: 700px;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-grow: 1;
+  font-family: Mona Sans Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
