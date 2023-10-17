@@ -2,18 +2,6 @@ import "./App.css";
 import logo from "./assets/logo.svg";
 import logoWhite from "./assets/logo-white.svg";
 import backLogo from "./assets/back-logo.svg";
-
-import airstackLogo from "./assets/airstack-logo.svg";
-import polygonLogo from "./assets/polygon-logo.svg";
-import mantleLogo from "./assets/mantle-logo.svg";
-import taikoLogo from "./assets/taiko-logo.svg";
-import baseLogo from "./assets/base-logo.svg";
-
-import airstackLogoWhite from "./assets/airstack-logo-white.svg";
-import polygonLogoWhite from "./assets/polygon-logo-white.svg";
-import mantleLogoWhite from "./assets/mantle-logo-white.svg";
-import taikoLogoWhite from "./assets/taiko-logo-white.svg";
-
 import waitlist from "@zootools/waitlist-js";
 
 const waitlistId = "FiWQu6gi2lHXsJaskHgA";
