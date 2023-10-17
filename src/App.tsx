@@ -57,10 +57,6 @@ function App() {
             </li>
           </ul>
           <div style={{ display: "flex", flexDirection: "column", rowGap: "34px", padding: "0px 16px" }}>
-            <span className="launching-soon mobile">
-              Launching soon on
-              <img src={baseLogo} alt="base logo" />
-            </span>
             <div id="join-waitlist" onClick={joinWaitlist}>
               Join Waitlist
             </div>
@@ -71,37 +67,16 @@ function App() {
       <img id="background-logo" src={backLogo} />
 
       <div id="center-container">
-        <h1 id="main-title">Monetize Your Expertise</h1>
-        <span id="center-sub-text">Make a profit by answering questions and investing in top builders</span>
+        <h1 id="main-title">Monetize Your Alpha</h1>
+        <span id="center-sub-text">Q&A marketplace for top builders.</span>
         <div id="center-button" onClick={joinWaitlist}>
           Join Waitlist
         </div>
       </div>
 
-      <div id="inner-container">
-        <span className="launching-soon desktop">
-          Launching soon on
-          <img src={baseLogo} alt="base logo" />
-        </span>
-
-        <div className="bottom-bar desktop">
-          <span id="bottom-bar-text">Top Winner Ethereum Singapore Hackathon</span>
-          <span id="logo-container">
-            <img className="bottom-bar-logo" src={polygonLogo} alt="polygon logo" />{" "}
-            <img className="bottom-bar-logo" src={mantleLogo} alt="mantle logo" />
-            <img className="bottom-bar-logo" src={taikoLogo} alt="taiko logo" />{" "}
-            <img className="bottom-bar-logo" src={airstackLogo} alt="airstack logo" />
-          </span>
-        </div>
-      </div>
-      <div className="mobile bottom-bar">
-        <span id="bottom-bar-text">Top Winner Ethereum Singapore Hackathon</span>
-        <span id="logo-container">
-          <img className="bottom-bar-logo" src={polygonLogoWhite} alt="polygon logo" />{" "}
-          <img className="bottom-bar-logo" src={mantleLogoWhite} alt="mantle logo" />
-          <img className="bottom-bar-logo" src={taikoLogoWhite} alt="taiko logo" />{" "}
-          <img className="bottom-bar-logo" src={airstackLogoWhite} alt="airstack logo" />
-        </span>
+      <div className="bottom-bar">
+        <span className="bottom-bar-text">From the creators of Talent Protocol</span>
+        <span className="bottom-bar-text">Launching soon on Base</span>
       </div>
     </div>
   );

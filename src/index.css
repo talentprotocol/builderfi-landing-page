@@ -4,6 +4,11 @@
     url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
 }
 
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("assets/fonts/SpaceGrotesk.ttf");
+}
+
 html {
   background-color: #191c1f;
   position: relative;
