@@ -6,6 +6,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px;
+  position: relative;
+  overflow: hidden;
 }
 
 .logo {
@@ -36,7 +38,7 @@
   color: var(--BFI-BLACK, #191c1f);
   font-variant-numeric: ordinal;
   font-feature-settings: "ss03" on, "ss01" on, "salt" on;
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -63,7 +65,7 @@
   font-weight: 400;
   text-transform: capitalize;
   line-height: 24px;
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
 }
 
 #topbar-button:hover {
@@ -101,7 +103,7 @@
 #center-sub-text {
   color: var(--BFI-WHITE, #f3f4f5);
   text-align: center;
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-variant-numeric: stacked-fractions;
   font-size: 20px;
   font-style: normal;
@@ -120,7 +122,7 @@
   background: linear-gradient(276deg, #0b6ef9 -11.16%, #0d3b7d 110.83%);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   color: var(--BFI-WHITE, #f3f4f5);
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -134,7 +136,7 @@
 }
 
 #background-logo {
-  position: fixed;
+  position: absolute;
   height: 100%;
   top: -40px;
   overflow: hidden;
@@ -170,11 +172,15 @@
   color: var(--BFI-BLACK, #191c1f);
   text-align: center;
   font-variant-numeric: stacked-fractions;
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
+}
+
+.bottom-bar-text a {
+  color: var(--BFI-BLACK, #191c1f);
 }
 
 .launching-soon {
@@ -206,7 +212,6 @@
   flex-direction: column;
   cursor: pointer;
   padding: 20px;
-  z-index: 3;
 }
 
 .btn-line {
@@ -218,11 +223,13 @@
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: -100vw;
   width: 100vw;
-  min-height: -webkit-fill-available;
+
+  height: 100%;
+
   overflow: hidden;
   background: radial-gradient(50% 50% at 50% 50%, #0b1f3a 0%, #191c1f 100%);
   padding-top: 100px;
@@ -245,25 +252,13 @@
 
 .mobile-menu ul li a {
   color: var(--BFI-WHITE, #f3f4f5);
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
   line-height: 40px; /* 125% */
   text-transform: capitalize;
   text-decoration: none;
-}
-
-.menu-btn.active .btn-line:nth-child(1) {
-  transform: translateY(4px) rotate(45deg);
-}
-
-.menu-btn.active .btn-line:nth-child(2) {
-  transform: translateY(-4px) rotate(-45deg);
-}
-
-.menu-btn.active + .mobile-menu {
-  right: 0;
 }
 
 #join-waitlist {
@@ -276,7 +271,7 @@
   background: var(--BFI-WHITE, #f3f4f5);
   color: var(--BFI-BLACK, #191c1f);
   text-align: center;
-  font-family: Mona Sans;
+  font-family: Mona-Sans;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -322,12 +317,15 @@
     text-align: center;
     font-variant-numeric: stacked-fractions ordinal;
     font-feature-settings: "ss03" on, "ss01" on, "salt" on;
-    font-family: Mona Sans;
+    font-family: Mona-Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 150% */
-    opacity: 0.6;
+  }
+
+  .bottom-bar-text a {
+    color: var(--BFI-WHITE, #f3f4f5);
   }
 
   .bottom-bar-logo {
@@ -353,11 +351,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index: 2;
-  }
-
-  .topbar-mobile .logo {
-    position: relative;
     z-index: 3;
   }
 
