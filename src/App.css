@@ -50,6 +50,27 @@
   color: rgba(25, 28, 31, 0.8);
 }
 
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--BFI-WHITE, #f3f4f5);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 #topbar-button {
   display: flex;
   padding: 8px 16px;

@@ -8,6 +8,20 @@ import FontFaceObserver from "fontfaceobserver";
 
 const waitlistId = "FiWQu6gi2lHXsJaskHgA";
 
+const loadImage = (image: string) => {
+  return new Promise((resolve, reject) => {
+    const loadImg = new Image();
+    loadImg.src = image;
+    // wait 2 seconds to simulate loading time
+    loadImg.onload = () =>
+      setTimeout(() => {
+        resolve(image);
+      }, 2000);
+
+    loadImg.onerror = (err) => reject(err);
+  });
+};
+
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isReady, setIsReady] = useState(false);
@@ -20,11 +34,26 @@ function App() {
     (async () => {
       await new FontFaceObserver("Mona-Sans").load();
       await new FontFaceObserver("Space Grotesk").load();
+      await Promise.all([logo, logoWhite, backLogo].map((image) => loadImage(image)));
+
       setIsReady(true);
     })();
   }, []);
 
-  if (!isReady) return <></>;
+  if (!isReady)
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          flexGrow: 1,
+        }}
+      >
+        <span className="loader"></span>
+      </div>
+    );
 
   return (
     <div id="container">
