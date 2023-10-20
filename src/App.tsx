@@ -62,7 +62,9 @@ function App() {
           <img className="logo" alt="logo" src={logo} height={"20px"} />
         </a>
         <div id="topbar-center-div">
-          <a href="https://twitter.com/BuilderFi">Follow us</a>
+          <a target="_blank" href="https://twitter.com/BuilderFi">
+            Follow us
+          </a>
           <a href={"#"}>FAQ</a>
         </div>
         <div id="topbar-button" onClick={joinWaitlist}>
@@ -91,7 +93,9 @@ function App() {
       <div className="mobile-menu" style={{ right: sidebarOpen ? 0 : undefined }}>
         <ul>
           <li>
-            <a href="https://twitter.com/BuilderFi">Follow us</a>
+            <a target="_blank" href="https://twitter.com/BuilderFi">
+              Follow us
+            </a>
           </li>
           <li>
             <a href="#">FAQ</a>
@@ -118,6 +122,7 @@ function App() {
         <span className="bottom-bar-text">
           From the creators of{" "}
           <a
+            target="_blank"
             href={"https://www.talentprotocol.com/"}
             style={{ textDecoration: "none", fontWeight: 700, cursor: "pointer" }}
           >
