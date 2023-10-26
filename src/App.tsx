@@ -112,7 +112,6 @@ function App() {
 
       <div id="center-container">
         <h1 id="main-title">Monetize Your Alpha</h1>
-        <span id="center-sub-text">Q&A marketplace for top builders.</span>
         <div id="center-button" onClick={joinWaitlist}>
           Join Waitlist
         </div>
