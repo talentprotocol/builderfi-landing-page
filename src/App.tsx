@@ -111,7 +111,7 @@ function App() {
       <img id="background-logo" src={backLogo} />
 
       <div id="center-container">
-        <h1 id="main-title">Monetize Your Alpha</h1>
+        <h1 id="main-title">Monetize Your Knowledge</h1>
         <div id="center-button" onClick={joinWaitlist}>
           Join Waitlist
         </div>
