@@ -65,7 +65,9 @@ function App() {
           <a target="_blank" href="https://twitter.com/BuilderFi">
             Follow us
           </a>
-          <a href={"#"}>FAQ</a>
+          <a target="_blank" href="https://talentprotocol.notion.site/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39">
+            FAQ
+          </a>
         </div>
         <div id="topbar-button" onClick={joinWaitlist}>
           Join Waitlist
@@ -98,7 +100,12 @@ function App() {
             </a>
           </li>
           <li>
-            <a href="#">FAQ</a>
+            <a
+              target="_blank"
+              href="https://talentprotocol.notion.site/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39"
+            >
+              FAQ
+            </a>
           </li>
         </ul>
         <div style={{ display: "flex", flexDirection: "column", rowGap: "34px", padding: "0px 16px" }}>
