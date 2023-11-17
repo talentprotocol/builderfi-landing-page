@@ -30,6 +30,10 @@ function App() {
     waitlist.openPopup(waitlistId);
   };
 
+  const launchApp = () => {
+    window.open("https://app.builder.fi/", "_blank");
+  }
+
   useEffect(() => {
     (async () => {
       await new FontFaceObserver("Mona-Sans").load();
@@ -69,8 +73,8 @@ function App() {
             FAQ
           </a>
         </div>
-        <div id="topbar-button" onClick={joinWaitlist}>
-          Join Waitlist
+        <div id="topbar-button" onClick={launchApp}>
+          Launch App
         </div>
       </div>
 
@@ -109,8 +113,8 @@ function App() {
           </li>
         </ul>
         <div style={{ display: "flex", flexDirection: "column", rowGap: "34px", padding: "0px 16px" }}>
-          <div id="join-waitlist" onClick={joinWaitlist}>
-            Join Waitlist
+          <div id="join-waitlist" onClick={launchApp}>
+            Launch App
           </div>
         </div>
       </div>
