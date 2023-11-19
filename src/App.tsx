@@ -69,7 +69,7 @@ function App() {
           <a target="_blank" href="https://twitter.com/BuilderFi">
             Follow us
           </a>
-          <a target="_blank" href="https://talentprotocol.notion.site/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39">
+          <a target="_blank" href="https://www.notion.so/talentprotocol/Talent-Protocol-FAQ-7effffd7005b43dc875e98cc187b368a">
             FAQ
           </a>
         </div>
@@ -106,7 +106,7 @@ function App() {
           <li>
             <a
               target="_blank"
-              href="https://talentprotocol.notion.site/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39"
+              href="https://www.notion.so/talentprotocol/Talent-Protocol-FAQ-7effffd7005b43dc875e98cc187b368a"
             >
               FAQ
             </a>
@@ -139,7 +139,7 @@ function App() {
             Talent Protocol
           </a>
         </span>
-        <span className="bottom-bar-text">Launching soon on Base</span>
+        <span className="bottom-bar-text">Alpha live on Base</span>
       </div>
     </div>
   );
