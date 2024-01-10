@@ -35,12 +35,6 @@ function App() {
   }
 
   useEffect(() => {
-    if(window.location.pathname.toLowerCase().includes('faq')) {
-      window.location.replace("https://www.notion.so/talentprotocol/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39");
-    }
-  }, [])
-
-  useEffect(() => {
     (async () => {
       await new FontFaceObserver("Mona-Sans").load();
       await new FontFaceObserver("Space Grotesk").load();
