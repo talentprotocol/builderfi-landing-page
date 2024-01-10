@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NotFound from './not-found-page.tsx';
-import RedirectPage from './redirect-page.tsx';
+import FAQ from './routes/faq.tsx';
 
 const router = createBrowserRouter([
   {
@@ -16,9 +16,8 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
   },
   {
-    path: "/faq",
-    element: <RedirectPage />,
-    errorElement: <NotFound />,
+    path: "faq",
+    element: <FAQ />
   },
 ]);
 

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export default function NotFound() {
   useEffect(() => {
-    window.location.replace("https://talentprotocol.com/");
+    window.location.replace("https://builder.fi/");
   }, [])
 
   return (
