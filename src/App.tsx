@@ -2,11 +2,8 @@ import "./App.css";
 import logo from "./assets/logo.svg";
 import logoWhite from "./assets/logo-white.svg";
 import backLogo from "./assets/back-logo.svg";
-import waitlist from "@zootools/waitlist-js";
 import { useEffect, useState } from "react";
 import FontFaceObserver from "fontfaceobserver";
-
-const waitlistId = "FiWQu6gi2lHXsJaskHgA";
 
 const loadImage = (image: string) => {
   return new Promise((resolve, reject) => {
@@ -25,14 +22,6 @@ const loadImage = (image: string) => {
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [isReady, setIsReady] = useState(false);
-
-  const joinWaitlist = async () => {
-    waitlist.openPopup(waitlistId);
-  };
-
-  const launchApp = () => {
-    window.open("https://app.builder.fi/", "_blank");
-  }
 
   useEffect(() => {
     (async () => {
@@ -66,16 +55,19 @@ function App() {
           <img className="logo" alt="logo" src={logo} height={"20px"} />
         </a>
         <div id="topbar-center-div">
-          <a target="_blank" href="https://twitter.com/BuilderFi">
+          <a target="_blank" href="https://warpcast.com/builderfi">
             Follow us
           </a>
-          <a target="_blank" href="https://www.notion.so/talentprotocol/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39">
+          <a
+            target="_blank"
+            href="https://www.notion.so/talentprotocol/builder-fi-FAQ-dcebfe7103b34d11aba90de032173b39"
+          >
             FAQ
           </a>
         </div>
-        <div id="topbar-button" onClick={launchApp}>
-          Launch App
-        </div>
+        <a target="_blank" href="https://app.builder.fi/home">
+          <div id="topbar-button">Launch App</div>
+        </a>
       </div>
 
       <div className="mobile topbar-mobile">
@@ -99,7 +91,7 @@ function App() {
       <div className="mobile-menu" style={{ right: sidebarOpen ? 0 : undefined }}>
         <ul>
           <li>
-            <a target="_blank" href="https://twitter.com/BuilderFi">
+            <a target="_blank" href="https://warpcast.com/builderfi">
               Follow us
             </a>
           </li>
@@ -113,19 +105,19 @@ function App() {
           </li>
         </ul>
         <div style={{ display: "flex", flexDirection: "column", rowGap: "34px", padding: "0px 16px" }}>
-          <div id="join-waitlist" onClick={launchApp}>
-            Launch App
-          </div>
+          <a target="_blank" href="https://app.builder.fi/home">
+            <div id="join-waitlist">Launch App</div>
+          </a>
         </div>
       </div>
 
       <img id="background-logo" src={backLogo} />
 
       <div id="center-container">
-        <h1 id="main-title">Monetize Your Knowledge</h1>
-        <div id="center-button" onClick={joinWaitlist}>
-          Join Waitlist
-        </div>
+        <h1 id="main-title">Q&A Marketplace</h1>
+        <a target="_blank" href="https://app.builder.fi/home">
+          <div id="center-button">Launch App</div>
+        </a>
       </div>
 
       <div className="bottom-bar">
@@ -139,7 +131,7 @@ function App() {
             Talent Protocol
           </a>
         </span>
-        <span className="bottom-bar-text">Alpha live on Base</span>
+        <span className="bottom-bar-text">Beta live on base</span>
       </div>
     </div>
   );

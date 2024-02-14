@@ -1,3 +1,12 @@
+* {
+  text-transform: lowercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #container {
   flex-grow: 1;
   width: 100%;
